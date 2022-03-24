@@ -1,0 +1,19 @@
+{
+  "name": "test-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orikage/test-actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orikage/test-actions/issues"
+  },
+  "homepage": "https://github.com/orikage/test-actions#readme"
+}
