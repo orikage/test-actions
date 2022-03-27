@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-  
+
     runs-on: ubuntu-latest
 
     strategy:
@@ -17,8 +17,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install lighthouse
-      uses: sudo npm i -g lighthouse
     - name: RUN lighthouse
       run: |
         npm install -g @lhci/cli@0.3.x
