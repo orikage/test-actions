@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -17,14 +16,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install lighthouse
+      run: sudo npm i -g lighthouse
     - name: RUN lighthouse
       run: |
         npm install -g @lhci/cli@0.3.x
         lighthouse \
           -- chrome-flags-"--headless"\
           --output html --output-path ./report.html
-    - name: upload result
     - uses: actions/upload-artifact@master
-      with: 
+    - name: upload result
+     with: 
         name: report
         path: report.html
