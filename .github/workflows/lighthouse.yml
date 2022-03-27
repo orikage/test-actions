@@ -19,7 +19,6 @@ jobs:
         run: sudo npm i -g lighthouse
       - name: RUN lighthouse
         run: |
-          npm install -g @lhci/cli@0.3.x
           lighthouse \
             --output html --output-path ./report.html
       - name: upload result
