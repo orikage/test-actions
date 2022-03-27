@@ -23,7 +23,6 @@ jobs:
           lighthouse \
             -- chrome-flags-"--headless"\
             --output html --output-path ./report.html
-
       - name: upload result
         uses: actions/upload-artifact@master
         with:
