@@ -12,8 +12,8 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-
+    container:
+      image: node:17.7-alpine3.14
     strategy:
       matrix:
         node-version: [12.x, 14.x, 16.x]
