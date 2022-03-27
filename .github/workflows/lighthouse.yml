@@ -2,9 +2,10 @@ name: lighthouse
 
 on:
   push:
-    branches:
-      - master
-  
+    branches: [ main ]
+  pull_request:
+    branches: [ main ] 
+
 jobs:
   build:
     runs_on: ubuntu-latest
