@@ -1,19 +1,11 @@
 {
   "ci": {
     "collect": {
-      "numberOfRuns": 3,
+      "numberOfRuns": 1,
       "startServerCommand": "npm run start",
       "url": [
-        "http://localhost:3000/",
-        "http://localhost:3000/about"
+        "http://localhost:3000/"
       ]
-    },
-    "assert": {
-      "assertions": {
-        "offscreen-images": "off",
-        "uses-webp-images": "off",
-        "first-contentful-paint": ["error", {"maxNumericValue": 10000}]
-      }
     },
     "upload": {
       "target": "temporary-public-storage"
