@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/orikage/test-actions/issues"
   },
-  "homepage": "https://github.com/orikage/test-actions#readme"
+  "homepage": "https://github.com/orikage/test-actions#readme",
+  "dependencies": {
+    "lighthouse": "^9.5.0"
+  }
 }
